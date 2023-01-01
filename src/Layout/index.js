@@ -3,12 +3,12 @@ import gsap from 'gsap';
 import Content from './Content';
 import { data } from '../data';
 import Canvas from './Canvas';
-import { LoadingAnimation } from '../components';
+// import { LoadingAnimation } from '../components';
 
 function Banner() {
   const banner = useRef();
   const [activeData, setActiveData] = useState(data[0]);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
   function handleSwatchClick(item) {
     if (activeData.id !== item.id) {
@@ -16,9 +16,9 @@ function Banner() {
     }
   }
 
-  function handleLoading() {
-    setIsLoading(false);
-  }
+  // function handleLoading() {
+  //   setIsLoading(false);
+  // }
 
   useEffect(() => {
     gsap.to(banner.current, {

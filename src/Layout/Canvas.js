@@ -27,7 +27,7 @@ class Canvas extends React.Component {
     this.InitialSetup();
   }
   InitialSetup = () => {
-    const { handleLoading } = this.props;
+    // const { handleLoading } = this.props;
     this.container = document.getElementById('container');
     const item = document.getElementById('container').getBoundingClientRect();
 
